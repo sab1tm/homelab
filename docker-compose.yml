@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  check-connect-app:
+    build: .
+    container_name: check-connect-app
+    networks:
+      - home-network
+
+networks:
+  home-network:
+    driver: bridge
